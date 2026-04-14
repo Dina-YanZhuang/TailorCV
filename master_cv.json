@@ -1,0 +1,326 @@
+{
+  "profile": {
+    "name": "Yan Zhuang",
+    "languages": [
+      {
+        "language": "Mandarin Chinese",
+        "level": "Native"
+      },
+      {
+        "language": "English",
+        "level": "Advanced"
+      },
+      {
+        "language": "Latvian",
+        "level": "Fluent"
+      },
+      {
+        "language": "Swedish",
+        "level": "Conversational"
+      }
+    ],
+    "tools": ["Excel", "SQL","Python", "Figma", "Canva"]
+  },
+  "experiences": [
+    {
+      "company": "Linköping University / KB-labb",
+      "title": "Research Assistant / Data Analyst Intern",
+      "department": "Digital Humanities",
+      "location": "Stockholm, Sweden",
+      "start_date": "2026-02",
+      "end_date": "Present",
+      "tags": [
+        "research",
+        "data analysis",
+        "machine learning",
+        "digital humanities",
+        "computer vision",
+        "archival data"
+      ],
+      "skills": [
+        "Python",
+        "dataset construction",
+        "binary classification",
+        "model evaluation",
+        "data annotation",
+        "workflow optimization"
+      ],
+      "bullets_raw": [
+        {
+          "action": "Contributed to digital humanities research projects on Swedish comics history and media coverage of folk high schools",
+          "method": "using digitized newspaper archives",
+          "result": "supported interdisciplinary historical media research"
+        },
+        {
+          "action": "Built structured datasets from archival newspapers",
+          "method": "including a database of pages containing comics",
+          "result": "created reusable research infrastructure"
+        },
+        {
+          "action": "Trained and evaluated a binary image classification model",
+          "method": "using DINOv2 feature embeddings",
+          "result": "improved automated detection of comic pages in historical newspapers"
+        },
+        {
+          "action": "Supported annotation and model iteration workflows",
+          "method": "through iterative testing and data refinement",
+          "result": "improved large-scale archival analysis processes"
+        }
+      ]
+    },
+    {
+      "company": "TikTok / TikTok for Business",
+      "title": "Product Marketing & Growth Intern",
+      "location": "Beijing, China",
+      "start_date": "2024-06",
+      "end_date": "2024-08",
+      "tags": [
+        "product marketing",
+        "growth",
+        "AI product",
+        "go-to-market",
+        "user research",
+        "B2B SaaS",
+        "advertising"
+      ],
+      "skills": [
+        "go-to-market",
+        "beta testing",
+        "user interviews",
+        "market analysis",
+        "feature positioning",
+        "stakeholder communication"
+      ],
+      "bullets_raw": [
+        {
+          "action": "Supported go-to-market efforts for an AI-powered ad creation product",
+          "method": "targeting SMB advertisers across domestic and international markets",
+          "result": "enabled early product commercialization"
+        },
+        {
+          "action": "Recruited and coordinated beta testing participants",
+          "method": "managing onboarding and feedback collection",
+          "result": "engaged 70 advertisers (50 domestic, 20 overseas)"
+        },
+        {
+          "action": "Developed internal documentation, pitch decks, and one-pagers",
+          "method": "translating product capabilities into business value",
+          "result": "improved internal alignment and customer-facing messaging"
+        },
+        {
+          "action": "Positioned key AI features",
+          "method": "including avatar generation, multilingual localization, and URL-to-creative automation",
+          "result": "clarified product differentiation"
+        },
+        {
+          "action": "Conducted surveys and user interviews",
+          "method": "analyzing friction points such as lag and usability issues",
+          "result": "generated insights for product and engineering teams"
+        },
+        {
+          "action": "Supported phased feature rollout readiness",
+          "method": "monitoring expansion criteria",
+          "result": "assisted transition from limited release to broader access"
+        },
+        {
+          "action": "Conducted adoption analysis for AI campaign optimization tools",
+          "method": "segmenting by industry, region, and advertiser size",
+          "result": "identified mature-stage adoption patterns and cross-vertical opportunities"
+        }
+      ]
+    },
+    {
+      "company": "Kika Tech",
+      "title": "Product Operations & Localization Associate",
+      "location": "Beijing, China",
+      "start_date": "2022-02",
+      "end_date": "2023-06",
+      "tags": [
+        "product operations",
+        "localization",
+        "market research",
+        "NLP product",
+        "competitor analysis",
+        "language technology"
+      ],
+      "skills": [
+        "market research",
+        "competitor benchmarking",
+        "feature prioritization",
+        "localization",
+        "cross-functional collaboration"
+      ],
+      "bullets_raw": [
+        {
+          "action": "Supported multilingual product quality improvements",
+          "method": "analyzing language-specific user issues and recommending fixes",
+          "result": "improved keyboard product usability"
+        },
+        {
+          "action": "Coordinated handwriting input data collection",
+          "method": "working with native speakers and data scientists",
+          "result": "supported model performance improvements in English and Spanish input systems"
+        },
+        {
+          "action": "Led end-to-end market research for a grammar-correction keyboard product",
+          "method": "conducted thorough market research and competitor analysis",
+          "result": "informed product opportunity assessment"
+        },
+        {
+          "action": "Conducted competitor benchmarking and user review analysis",
+          "method": "prioritizing requested features",
+          "result": "translated insights into feature proposals aligned with technical capabilities"
+        },
+        {
+          "action": "Delivered internal product pitches",
+          "method": "presenting market demand and product rationale",
+          "result": "contributed to positive investor interest during fundraising"
+        }
+      ]
+    },
+    {
+      "company": "ByteDance (Technical Academy)",
+      "title": "User Growth & Community Operations Intern",
+      "location": "Beijing, China",
+      "start_date": "2020-11",
+      "end_date": "2021-03",
+      "tags": [
+        "growth",
+        "community operations",
+        "user onboarding",
+        "education platform",
+        "operations analysis"
+      ],
+      "skills": [
+        "user support",
+        "survey analysis",
+        "campaign execution",
+        "stakeholder coordination",
+        "growth operations"
+      ],
+      "bullets_raw": [
+        {
+          "action": "Supported onboarding operations for an internal technical learning platform",
+          "method": "serving new engineering hires",
+          "result": "improved new-user enablement"
+        },
+        {
+          "action": "Provided user support and resolved platform issues",
+          "method": "through bot-based onboarding workflows",
+          "result": "reduced friction during platform adoption"
+        },
+        {
+          "action": "Analyzed surveys and historical support data",
+          "method": "to identify barriers to enrollment and completion",
+          "result": "generated actionable operational insights"
+        },
+        {
+          "action": "Proposed product and UX improvements",
+          "method": "including shorter access paths and simplified guidance materials",
+          "result": "improved user journey efficiency"
+        },
+        {
+          "action": "Executed engagement campaigns and instructor recognition programs",
+          "method": "in collaboration with internal stakeholders",
+          "result": "increased participation rate by 31% and completion rate by 7%"
+        }
+      ]
+    },
+    {
+      "company": "LOVAT",
+      "title": "Growth & Localization Associate (Part-time)",
+      "location": "Riga, Latvia",
+      "start_date": "2020-02",
+      "end_date": "2020-06",
+      "tags": [
+        "growth",
+        "localization",
+        "SaaS",
+        "market entry",
+        "customer onboarding"
+      ],
+      "skills": [
+        "SEO",
+        "customer support",
+        "product demo",
+        "market expansion",
+        "localization"
+      ],
+      "bullets_raw": [
+        {
+          "action": "Supported China market expansion for a SaaS tax automation platform",
+          "method": "serving cross-border e-commerce sellers",
+          "result": "enabled early market entry operations"
+        },
+        {
+          "action": "Localized website and user-facing materials",
+          "method": "for Chinese-speaking customers",
+          "result": "improved accessibility for target users"
+        },
+        {
+          "action": "Assisted customer onboarding",
+          "method": "through demos, pricing explanations, and live support",
+          "result": "improved conversion readiness"
+        },
+        {
+          "action": "Executed acquisition initiatives",
+          "method": "through community outreach and SEO on Chinese platforms",
+          "result": "helped acquire the company’s first Chinese customers"
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Uppsala University",
+      "degree": "Master of Arts in Digital Humanities",
+      "location": "Sweden",
+      "start_date": "2023-08",
+      "end_date": "2025-06",
+      "thesis": {
+        "title": "Why We Tell AI Our Stories: Exploring Motivations, Perceptions and Impact of Interaction with ChatGPT",
+        "grade": "VG",
+        "summary": "Qualitative study using semi-structured interviews and Uses and Gratifications Theory to examine emotional support, sense-making, and everyday meaning-making in human-AI interaction."
+      }
+    },
+    {
+      "institution": "Beijing International Studies University",
+      "degree": "Bachelor of Arts in Latvian Language and Literature",
+      "location": "China",
+      "start_date": "2017-09",
+      "end_date": "2021-06"
+    },
+    {
+      "institution": "Riga Technical University",
+      "degree": "Exchange Study in Technical Translation",
+      "location": "Riga, Latvia",
+      "start_date": "2019-08",
+      "end_date": "2020-06"
+    }
+  ],
+  "skills": {
+    "business": [
+      "Product Marketing",
+      "Go-to-Market",
+      "User Research",
+      "Market Research",
+      "Localization",
+      "Customer Onboarding",
+      "Growth Analysis",
+      "Community Operations"
+    ],
+    "data_technical": [
+      "Python",
+      "Natural Language Processing",
+      "Machine Learning Workflows",
+      "Data Annotation",
+      "Dashboard Analysis",
+      "Excel",
+      "Feature Testing"
+    ],
+    "design_tools": [
+      "Figma",
+      "Canva"
+    ]
+  }
+}
