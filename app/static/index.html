@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TailorCV — AI-Powered CV Refining Agent</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <span class="logo">✂️ TailorCV</span>
+      <p class="tagline">Upload your master CV and a job description — our AI will tailor your CV for the role.</p>
+    </div>
+  </header>
+
+  <main>
+    <form id="tailorForm" novalidate>
+      <div class="upload-grid">
+
+        <!-- CV upload -->
+        <div class="upload-card" id="cvCard">
+          <div class="card-icon">📄</div>
+          <h2>Your Master CV</h2>
+          <p class="card-hint">PDF, DOCX, or TXT · max 10 MB</p>
+          <label class="file-label" for="cvFile">
+            <span id="cvLabel">Click to choose or drag &amp; drop</span>
+            <input type="file" id="cvFile" name="cv_file" accept=".pdf,.docx,.txt" required />
+          </label>
+          <div class="file-preview" id="cvPreview"></div>
+        </div>
+
+        <!-- JD upload / paste -->
+        <div class="upload-card" id="jdCard">
+          <div class="card-icon">💼</div>
+          <h2>Job Description</h2>
+          <p class="card-hint">Upload a file <em>or</em> paste the text below</p>
+          <label class="file-label" for="jdFile">
+            <span id="jdLabel">Click to choose or drag &amp; drop</span>
+            <input type="file" id="jdFile" name="jd_file" accept=".pdf,.docx,.txt" />
+          </label>
+          <div class="file-preview" id="jdPreview"></div>
+          <div class="separator"><span>or</span></div>
+          <textarea
+            id="jdText"
+            name="jd_text"
+            placeholder="Paste the job description here…"
+            rows="7"
+          ></textarea>
+        </div>
+
+      </div><!-- /upload-grid -->
+
+      <div class="submit-row">
+        <button type="submit" id="submitBtn">
+          <span id="btnLabel">✨ Tailor My CV</span>
+          <span id="btnSpinner" class="spinner hidden"></span>
+        </button>
+      </div>
+    </form>
+
+    <!-- Error banner -->
+    <div id="errorBanner" class="banner banner-error hidden" role="alert"></div>
+
+    <!-- Result section -->
+    <section id="resultSection" class="hidden">
+      <div class="result-header">
+        <h2>Your Tailored CV</h2>
+        <div class="result-actions">
+          <button id="copyBtn" class="btn-secondary">📋 Copy</button>
+          <button id="downloadBtn" class="btn-secondary">⬇️ Download .md</button>
+        </div>
+      </div>
+      <div id="resultContent" class="result-content"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Powered by <strong>OpenAI GPT-4o</strong> &amp; <strong>FastAPI</strong></p>
+  </footer>
+
+  <!-- marked.js for Markdown → HTML rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>

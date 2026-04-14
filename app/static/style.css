@@ -1,0 +1,222 @@
+/* ── Reset & base ─────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --primary: #4f46e5;
+  --primary-dark: #4338ca;
+  --success: #16a34a;
+  --danger: #dc2626;
+  --bg: #f8fafc;
+  --card-bg: #ffffff;
+  --border: #e2e8f0;
+  --text: #1e293b;
+  --muted: #64748b;
+  --radius: 12px;
+  --shadow: 0 4px 16px rgba(0,0,0,.08);
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header ───────────────────────────────────────────────────────────── */
+header {
+  background: linear-gradient(135deg, var(--primary) 0%, #7c3aed 100%);
+  color: #fff;
+  padding: 2.5rem 1rem;
+  text-align: center;
+}
+.header-inner { max-width: 720px; margin: 0 auto; }
+.logo { font-size: 2rem; font-weight: 700; letter-spacing: -0.5px; }
+.tagline { margin-top: .6rem; font-size: 1.05rem; opacity: .9; }
+
+/* ── Main ─────────────────────────────────────────────────────────────── */
+main { flex: 1; max-width: 960px; margin: 0 auto; padding: 2rem 1rem 3rem; width: 100%; }
+
+/* ── Upload grid ──────────────────────────────────────────────────────── */
+.upload-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+@media (max-width: 640px) { .upload-grid { grid-template-columns: 1fr; } }
+
+/* ── Upload card ──────────────────────────────────────────────────────── */
+.upload-card {
+  background: var(--card-bg);
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  transition: border-color .2s;
+}
+.upload-card.drag-over { border-color: var(--primary); background: #eef2ff; }
+.card-icon { font-size: 2rem; }
+.upload-card h2 { font-size: 1.15rem; font-weight: 600; }
+.card-hint { font-size: .85rem; color: var(--muted); }
+
+/* ── File label (custom button) ───────────────────────────────────────── */
+.file-label {
+  display: block;
+  cursor: pointer;
+}
+.file-label span {
+  display: block;
+  background: #f1f5f9;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: .55rem 1rem;
+  font-size: .9rem;
+  color: var(--muted);
+  text-align: center;
+  transition: background .15s;
+}
+.file-label:hover span { background: #e2e8f0; }
+.file-label input[type="file"] { display: none; }
+
+.file-preview {
+  font-size: .85rem;
+  color: var(--success);
+  min-height: 1.2em;
+}
+
+/* ── Separator ────────────────────────────────────────────────────────── */
+.separator {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  color: var(--muted);
+  font-size: .8rem;
+}
+.separator::before, .separator::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+/* ── Textarea ─────────────────────────────────────────────────────────── */
+textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: .65rem .85rem;
+  font-family: inherit;
+  font-size: .9rem;
+  resize: vertical;
+  color: var(--text);
+  background: #fafafa;
+  transition: border-color .2s;
+}
+textarea:focus { outline: none; border-color: var(--primary); background: #fff; }
+
+/* ── Submit button ────────────────────────────────────────────────────── */
+.submit-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+button[type="submit"] {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: .85rem 2.5rem;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  transition: background .2s, transform .1s;
+}
+button[type="submit"]:hover { background: var(--primary-dark); }
+button[type="submit"]:active { transform: scale(.98); }
+button[type="submit"]:disabled { opacity: .6; cursor: not-allowed; }
+
+/* ── Spinner ──────────────────────────────────────────────────────────── */
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 3px solid rgba(255,255,255,.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin .7s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.hidden { display: none !important; }
+
+/* ── Error / Info banner ──────────────────────────────────────────────── */
+.banner {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  font-size: .95rem;
+}
+.banner-error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: var(--danger);
+}
+
+/* ── Result section ───────────────────────────────────────────────────── */
+#resultSection {
+  margin-top: 2.5rem;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+}
+.result-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-bottom: 1.25rem;
+}
+.result-header h2 { font-size: 1.25rem; font-weight: 700; }
+.result-actions { display: flex; gap: .5rem; }
+
+.btn-secondary {
+  background: #f1f5f9;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: .45rem .9rem;
+  border-radius: 6px;
+  font-size: .875rem;
+  cursor: pointer;
+  transition: background .15s;
+}
+.btn-secondary:hover { background: #e2e8f0; }
+
+/* ── Rendered Markdown ────────────────────────────────────────────────── */
+.result-content {
+  line-height: 1.7;
+  font-size: .975rem;
+}
+.result-content h1, .result-content h2 { margin-top: 1.4em; margin-bottom: .4em; }
+.result-content h1 { font-size: 1.4rem; }
+.result-content h2 { font-size: 1.15rem; border-bottom: 1px solid var(--border); padding-bottom: .3em; }
+.result-content h3 { font-size: 1rem; margin-top: 1em; }
+.result-content p { margin-bottom: .6em; }
+.result-content ul, .result-content ol { margin-left: 1.5em; margin-bottom: .6em; }
+.result-content li { margin-bottom: .25em; }
+.result-content strong { color: #0f172a; }
+.result-content hr { border: none; border-top: 1px solid var(--border); margin: 1.2em 0; }
+
+/* ── Footer ───────────────────────────────────────────────────────────── */
+footer {
+  text-align: center;
+  padding: 1.25rem;
+  font-size: .85rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
